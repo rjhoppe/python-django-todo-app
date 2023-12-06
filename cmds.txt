@@ -1,0 +1,15 @@
+# Start Django app locally
+python manage.py runserver
+
+# Anytime you make a change to database models, you need to run a migration
+# You can run these cmds to tell Django to apply these updates to your database
+
+# 1: Stage db changes
+python manage.py makemigrations
+# 2: Push migration
+python manage.py migrate
+
+# Create superuser for Django admin panel
+python manage.py createsuperuser
+
+# Go to /admin to login as your superuser
